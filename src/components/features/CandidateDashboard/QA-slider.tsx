@@ -50,7 +50,7 @@ export function ObjectiveAnswers({ answers }: ObjectiveAnswersProps) {
                 <div key={optionIndex} className="flex items-center space-x-2">
                   <Checkbox
                     id={`option-${index}-${optionIndex}`}
-                    checked={option[1] == true}
+                    checked={Boolean(option[1]) == true}
                   />
                   <label
                     htmlFor={`option-${index}-${optionIndex}`}
