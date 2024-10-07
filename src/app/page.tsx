@@ -291,18 +291,18 @@ export default function Home() {
           <div className="flex items-center space-x-4">
             <Button
               variant="outline"
-              size="lg"
+              size="default"
               className="flex items-center space-x-2 text-base"
             >
-              <Share size={20} />
+              <Share size={18} />
               <span>Export</span>
             </Button>
             <Button
-              size="lg"
+              size="default"
               className="bg-teal-800 flex items-center space-x-2 text-base"
             >
               <span>Share</span>
-              <Share2 size={20} />
+              <Share2 size={18} />
             </Button>
           </div>
         </div>
