@@ -111,14 +111,16 @@ export function Sidebar() {
                   {/* Slider with displayed range */}
                   <Slider
                     value={experienceRange}
-                    onValueChange={setExperienceRange}
+                    onValueChange={(value: [number, number]) =>
+                      setExperienceRange(value)
+                    }
                     max={20}
                     step={1}
                     className="mb-4"
                     // Custom classes to style the slider and thumbs
-                    thumbClassName="h-4 w-4 bg-teal-600 rounded-full"
-                    trackClassName="bg-gray-200 h-2"
-                    rangeTrackClassName="bg-teal-200 h-2"
+                    // thumbClassName="h-4 w-4 bg-teal-600 rounded-full"
+                    // trackClassName="bg-gray-200 h-2"
+                    // rangeTrackClassName="bg-teal-200 h-2"
                   />
 
                   <p className="mb-2">Job Role</p>

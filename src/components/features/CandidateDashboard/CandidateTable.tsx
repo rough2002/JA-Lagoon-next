@@ -41,6 +41,7 @@ interface Candidate {
   domainScores: object;
   objectiveAnswers: {
     question: string;
+    // eslint-disable-next-line
     options: any[];
   }[];
 }
