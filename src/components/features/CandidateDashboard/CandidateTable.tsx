@@ -109,9 +109,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
                     </Button>
                   </div>
                 </TableCell>
-                <TableCell className="text-base">
-                  {candidate.timestamp}
-                </TableCell>
+                <TableCell className="text-sm">{candidate.timestamp}</TableCell>
                 <TableCell className="">
                   <TooltipProvider>
                     <Tooltip>
