@@ -63,7 +63,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
     <div className="border rounded-md text-2xl">
       <div className="overflow-auto h-[calc(100vh-16rem)] relative">
         <Table>
-          <TableHeader className="sticky top-0 bg-gray-100 z-10 text-lg text-black">
+          <TableHeader className="sticky top-0 bg-gray-100 z-10 text-base text-black">
             <TableRow>
               <TableHead>
                 <Checkbox />
@@ -123,7 +123,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
                       <TooltipContent side="right" className="w-80 p-0 z-20">
                         <TooltipArrow className="fill-gray-200" />
                         <div className=" rounded-lg shadow-lg p-4 bg-gray-200">
-                          <h3 className="text-lg font-semibold text-black mb-3">
+                          <h3 className="text-base font-semibold text-black mb-3">
                             Candidate Score Card
                           </h3>
                           {Object.entries(candidate.domainScores).map(
@@ -146,7 +146,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
                 </TableCell>
                 <TableCell>
                   <span
-                    className={`px-2 py-1 rounded-full text-base ${
+                    className={`px-2 py-1 rounded-full text-sm ${
                       candidate.status === "Shortlisted"
                         ? "bg-green-100 text-green-800"
                         : candidate.status === "Waitlisted"
