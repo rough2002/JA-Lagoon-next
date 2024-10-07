@@ -28,7 +28,7 @@ export function Header() {
             Lagoon
           </span>
         </div>
-        <h1 className="text-4xl font-normal p-2">Untitled file</h1>
+        <h1 className="text-3xl font-normal p-2 pt-4">Untitled file</h1>
       </div>
       {/* <div className="flex items-center space-x-4">
         <Button variant="outline" size="lg">

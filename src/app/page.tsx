@@ -246,7 +246,7 @@ export default function Home() {
             />
           </div>
           <Select>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
               <SelectValue placeholder="Status" />
             </SelectTrigger>
             <SelectContent>
@@ -256,7 +256,7 @@ export default function Home() {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
               <SelectValue placeholder="Experience" />
             </SelectTrigger>
             <SelectContent>
@@ -266,7 +266,7 @@ export default function Home() {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
               <SelectValue placeholder="Degree" />
             </SelectTrigger>
             <SelectContent>
@@ -276,7 +276,7 @@ export default function Home() {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
               <SelectValue placeholder="Hard Skills" />
             </SelectTrigger>
             <SelectContent>

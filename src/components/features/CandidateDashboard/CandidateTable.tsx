@@ -130,7 +130,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
                             ([domain, score]) => (
                               <div
                                 key={domain}
-                                className="flex justify-between items-center mb-2 bg-white h-10 rounded-lg px-2"
+                                className="flex justify-between items-center mb-2 bg-white h-8 rounded-lg px-2"
                               >
                                 <span className="text-base font-medium text-gray-600">
                                   {domain}
