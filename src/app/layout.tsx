@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Header } from "@/components/Layout/Header";
+import { Sidebar } from "@/components/Layout/Sidebar";
+import { SidebarProvider } from "@/contexts/sidebarContext";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import { Main } from "@/components/Layout/Main";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +33,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex h-screen overflow-hidden">
+          <Header />
+          <SidebarProvider>
+            <Sidebar />
+            <Main>{children}</Main>
+          </SidebarProvider>
+        </div>
+        <Toaster />
       </body>
     </html>
   );
