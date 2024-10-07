@@ -31,7 +31,7 @@ export function Sidebar() {
   ]);
   return (
     <div
-      className={`fixed left-0 top-24 h-[calc(100vh-8rem)] bg-white border-y border-r flex flex-col transition-all duration-300 ${
+      className={`fixed left-0 top-20 h-[calc(100vh-8rem)] bg-white border-y border-r flex flex-col transition-all duration-300 ${
         isSidebarOpen ? "w-80" : "w-16 shadow-lg rounded"
       }`}
     >

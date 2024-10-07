@@ -233,11 +233,11 @@ export default function Home() {
 
   return (
     <div className="p-4 flex flex-col space-y-4">
-      <div className="flex justify-between w-full h-14 pt-4">
+      <div className="flex justify-between w-full h-16 pt-4">
         <div className="flex gap-4">
           <div className="relative">
             <Search
-              className="absolute left-3 top-1/2 transform -translate-y-3 text-gray-400"
+              className="absolute left-3 top-1/2 transform -translate-y-4 text-gray-400"
               size={20}
             />
             <Input

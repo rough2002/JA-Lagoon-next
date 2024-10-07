@@ -3,7 +3,7 @@ import { outfit } from "@/app/font";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 h-20 bg-white border-b flex items-center px-4 z-10">
+    <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b flex items-center px-4 z-10">
       <div className="flex items-center space-x-4 flex-1">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10">
@@ -23,12 +23,12 @@ export function Header() {
             </svg>
           </div>
           <span
-            className={`${outfit.className} font-bold text-4xl text-teal-800 `}
+            className={`${outfit.className} font-bold text-3xl text-teal-800 `}
           >
             Lagoon
           </span>
         </div>
-        <h1 className="text-3xl font-normal p-2 pt-4">Untitled file</h1>
+        <h1 className="text-3xl font-normal p-2">Untitled file</h1>
       </div>
       {/* <div className="flex items-center space-x-4">
         <Button variant="outline" size="lg">
@@ -38,7 +38,7 @@ export function Header() {
       </div> */}
       <div className="ml-auto">
         {/* Avatar for user */}
-        <Avatar className="inline-block h-12 w-12 rounded-full ring-2 ring-teal-800">
+        <Avatar className="inline-block h-10 w-10 rounded-full ring-2 ring-teal-800">
           <AvatarImage
             src={`https://randomuser.me/api/portraits/men/${1}.jpg`}
             alt="User Avatar"
