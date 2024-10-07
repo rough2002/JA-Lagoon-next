@@ -112,7 +112,7 @@ export function CandidateTable({ candidates }: CandidateTableProps) {
                 <TableCell className="text-base">
                   {candidate.timestamp}
                 </TableCell>
-                <TableCell>
+                <TableCell className="">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger>
@@ -206,7 +206,7 @@ function CircularProgress({ value }: { value: number }) {
   const offset = circumference - (value / 100) * circumference;
 
   return (
-    <div className="relative w-16 h-16">
+    <div className="relative w-14 h-14">
       <svg className="w-full h-full" viewBox="0 0 44 44">
         <circle
           className="text-green-100"
@@ -230,7 +230,7 @@ function CircularProgress({ value }: { value: number }) {
           cy="22"
         />
       </svg>
-      <span className="absolute inset-0 flex items-center justify-center text-lg font-bold text-green-700">
+      <span className="absolute inset-0 flex items-center justify-center text-base font-bold text-green-700">
         {value}
       </span>
     </div>
